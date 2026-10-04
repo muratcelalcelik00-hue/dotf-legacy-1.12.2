@@ -1,0 +1,9 @@
+entity.dotflegacy.pod_infector.name=Pod Infector
+item.spawn_egg.entity.dotflegacy.pod_infector.name=Pod Infector Yaratma Yumurtası
+item.dotflegacy.pod_fragment.name=Pod Parçası
+itemGroup.dotflegacy=Dawn of the Flood Legacy
+subtitles.dotflegacy.entity.pod_infector.idle=Pod Infector çığlık atıyor
+subtitles.dotflegacy.entity.pod_infector.pop=Pod Infector patlıyor
+subtitles.dotflegacy.entity.pod.bite=Pod Infector ısırıp kurbanına yapışıyor
+death.attack.dotflegacy.pod_pop=%1$s bir Pod Infector'ın gazıyla patlatıldı
+death.attack.dotflegacy.pod_pop.player=%1$s, %2$s ile savaşırken bir Pod Infector'ın gazıyla patlatıldı

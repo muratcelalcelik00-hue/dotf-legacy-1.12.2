@@ -1,0 +1,9 @@
+entity.dotflegacy.pod_infector.name=Pod Infector
+item.spawn_egg.entity.dotflegacy.pod_infector.name=Pod Infector Spawn Egg
+item.dotflegacy.pod_fragment.name=Pod Fragment
+itemGroup.dotflegacy=Dawn of the Flood Legacy
+subtitles.dotflegacy.entity.pod_infector.idle=Pod Infector screeches
+subtitles.dotflegacy.entity.pod_infector.pop=Pod Infector bursts
+subtitles.dotflegacy.entity.pod.bite=Pod Infector bites and latches onto its victim
+death.attack.dotflegacy.pod_pop=%1$s was exploded with gas by a Pod Infector
+death.attack.dotflegacy.pod_pop.player=%1$s was exploded with gas by a Pod Infector whilst fighting %2$s

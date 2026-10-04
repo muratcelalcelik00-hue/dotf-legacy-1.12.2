@@ -1,0 +1,44 @@
+# GitHub Actions workflow for building the mod.
+#
+# NOTE: This file lives in ci/ because the automation that created this PR has no
+# `workflows` permission and GitHub refuses pushes that add .github/workflows/*.
+# To enable CI, copy this file to:  .github/workflows/build.yml
+# (GitHub web UI: "Add file" -> "Create new file" -> name it .github/workflows/build.yml,
+#  paste the content below and commit.)
+
+name: Build
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
+      - name: Setup Java
+        uses: actions/setup-java@v5
+        with:
+          java-version: '25'
+          distribution: 'zulu'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Build with Gradle
+        run: ./gradlew build --no-daemon --stacktrace
+
+      - name: Upload mod jar
+        uses: actions/upload-artifact@v4
+        with:
+          name: dotflegacy-1.12.2
+          path: build/libs/*.jar
+          if-no-files-found: error
