@@ -1,0 +1,35 @@
+{
+	"entity.pod_infector.idle": {
+		"category": "hostile",
+		"subtitle": "subtitles.dotflegacy.entity.pod_infector.idle",
+		"sounds": [
+			"dotflegacy:mob/pod_infector.idle1",
+			"dotflegacy:mob/pod_infector.idle2",
+			"dotflegacy:mob/pod_infector.idle3",
+			"dotflegacy:mob/pod_infector.idle4",
+			"dotflegacy:mob/pod_infector.idle5",
+			"dotflegacy:mob/pod_infector.idle6",
+			"dotflegacy:mob/pod_infector.idle7",
+			"dotflegacy:mob/pod_infector.idle8",
+			"dotflegacy:mob/pod_infector.idle9",
+			"dotflegacy:mob/pod_infector.idle10"
+		]
+	},
+	"entity.pod_infector.pop": {
+		"category": "hostile",
+		"subtitle": "subtitles.dotflegacy.entity.pod_infector.pop",
+		"sounds": [
+			"dotflegacy:mob/pod_infector.pop1",
+			"dotflegacy:mob/pod_infector.pop2",
+			"dotflegacy:mob/pod_infector.pop3",
+			"dotflegacy:mob/pod_infector.pop4"
+		]
+	},
+	"entity.pod.bite": {
+		"category": "hostile",
+		"subtitle": "subtitles.dotflegacy.entity.pod.bite",
+		"sounds": [
+			"dotflegacy:mob/pod.bite"
+		]
+	}
+}
